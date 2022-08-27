@@ -1,0 +1,28 @@
+.pages {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: none;
+    gap: 28px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16px / 14px);
+    color: var(--mobile-menu-cl);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: var(--accent-cl);
+  }
+}
