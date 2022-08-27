@@ -4,14 +4,14 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/customer-mobile.jpg);
+    background-image: url(../images/customer-mobile.png);
 
     @media screen and (min-width: 768px) {
-        background-image: url(../images/customer-tablet.jpg);
+        background-image: url(../images/customer-tablet.png);
         padding-bottom: 120px;
     }
     @media screen and (min-width:1280px){
-        background-image: url(../images/customer-desktop.jpg);
+        background-image: url(../images/customer-desktop.png);
         padding-bottom: 200px;
     }
 }
