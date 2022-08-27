@@ -21,7 +21,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
+  }
 
 .header__btn {
   display: none;
@@ -36,6 +36,11 @@
     font-size: 14px;
     line-height: 1.5;
     background-color: var(--accent-cl);
+  }
+
+  &:hover,
+  &:focus{
+    background-color: red;
   }
 }
 
