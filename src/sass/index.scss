@@ -1,2 +1,12 @@
 @import './common';
-@import './example';
+@import './utils/mixins';
+@import './base/base';
+@import './variables/variables';
+@import './container';
+@import './header';
+@import './hero';
+@import './offerings';
+@import './favorites';
+@import './customers-say';
+@import './subscribe';
+@import './footer';
