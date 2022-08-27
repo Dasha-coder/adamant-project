@@ -29,8 +29,6 @@ a {
 
 .customer-section {
     
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,23 +40,10 @@ a {
     }
 }
 
-.container {
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media screen and (min-width: 768px) {
-        min-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-}
 
 .customer-title {
 
-
+    
     font-weight: 700;
     font-size: 28px;
     line-height: calc(33 / 28);
