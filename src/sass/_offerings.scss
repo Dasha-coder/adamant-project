@@ -1,0 +1,106 @@
+// .offerings-picture {
+// margin-top: 41px;
+// margin-bottom: 60px;
+// margin-left: auto;
+// margin-right: auto;
+// }
+
+.offerings-title {
+    margin-top: 60px;
+    margin-bottom: 28px;
+font-weight: 700;
+font-size: 28px;
+line-height: calc(33 / 28);
+color: var(--main-txt-cl);
+}
+
+.offerings-list__name {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    color: var(--main-txt-cl);   
+}
+
+.offerings-title__description, 
+.offerings-list__text {
+    margin-bottom: 28px;
+    max-width: 272px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--main-txt-cl);    
+}
+
+.offerings-icons {
+    position: relative;
+    margin-bottom: 8px; 
+}
+
+.offerings-icons--green {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.offerings-background {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  
+    background-image: url("../images/offerings/bcg-offerings@1x_sm.png");
+    
+    // linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //   url('../images/hero-images/img@1x_sm.jpg');
+    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //   url('../images/hero-images/img@2x_sm.jpg');
+    //   } 
+  
+    @media screen and (min-width: 768px) {
+    
+    background-image: url("../images/offerings/bcg-offerings@1x_md.png");
+    }
+  
+    @media screen and (min-width: 1280px) {
+    background-image: url("../images/offerings/bcg-offerings@1x_lg.png")
+  }
+}
+
+.offerings-button {
+    margin-right: 24px;
+font-weight: 500;
+font-size: 13px;
+line-height: calc(20 / 13);
+color: var(--main-txt-cl);
+background-color: #ffffff;
+    border: solid 2px var(--icons-cl);
+    cursor: pointer;
+    font-family: inherit;
+    padding: 11px 22px;
+
+    border-radius: 30px;
+  
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: solid 2px #597D00;
+  }
+
+}
+
+.read-button {
+    background-color: var(--background-cl);
+ width: 83px;
+height: 34px;
+border: transparent;
+font-size: 13.67px;
+color: var(--mobile-menu-cl);
+}
