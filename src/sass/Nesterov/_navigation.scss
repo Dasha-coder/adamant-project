@@ -1,9 +1,27 @@
-.navigation{
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        flex-basis: calc(100% - 128px);
-        justify-content: space-between;            
-    }
-}
+.navigation {
+  display: flex;
 
+  &__header{
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% - 126px);
+    justify-content: space-between;
+  }
+  }
+  
+  &__footer {
+    align-items: flex-start;
+    gap: 81px;
+
+    @media screen and (min-width: 768px) {
+        gap: 114px;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 145px;
+      align-items: center;
+    }
+  }
+}

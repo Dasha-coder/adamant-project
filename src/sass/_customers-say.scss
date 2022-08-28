@@ -1,0 +1,113 @@
+
+.customer-section {
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/customer-mobile.png);
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/customer-tablet.png);
+        padding-bottom: 120px;
+    }
+    @media screen and (min-width:1280px){
+        background-image: url(../images/customer-desktop.png);
+        padding-bottom: 200px;
+    }
+}
+
+
+.customer-title {   
+    @include fonts(28px, 33px, 700);    
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: calc(49 / 42);
+    }
+}
+
+.customer-text {
+    @include fonts (14px, 16px);    
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: calc(19 / 16);
+    }
+}
+
+.customer-review {
+    @include fonts(16px, 19px, 700);
+      margin-bottom: 42px;
+    margin-top: 28px;
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: calc(21 / 18);
+    }
+}
+
+.customer-review-cont {
+    width: 100%;
+    padding: 8px;
+    @media screen and (min-width: 768px) {
+        padding: 12px;
+    }
+
+         @media screen and (min-width: 1280px) {
+             padding: 14px;
+             max-width: 550px;
+         }
+}
+
+.customer-list{
+@media screen and (min-width:768px) {     
+        display: flex;
+        gap: 32px;    
+}
+
+@media screen and (min-width:1280px) {
+    gap: 140px;
+}
+}
+
+.customer-item {
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+
+
+.customer-item:not(:last-child) {
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+    }
+}
+
+.icon-star:not(:last-child) {
+    margin-right: 3px;
+}
+
+.customer-name {
+    @include fonts(14px, 21px, 500);
+    
+}
+
+.customer-description {
+    @include fonts(14px, 21px);
+
+}
+
+.customer-info-container {
+    display: flex;
+    align-items: center;
+}
+
+.customer-info-container-2 {
+    flex-direction: column;
+    margin-left: 16px;
+    padding-right: 14px;
+    border-right: 1px solid #7eb101;
+}
+

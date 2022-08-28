@@ -1,4 +1,9 @@
+@import './buttons';
 @import './variables/variables';
+@import './common';
+@import './utils/mixins';
+@import './base/base';
+@import './container';
 
 // /Nesterov
 // header
@@ -6,10 +11,9 @@
 @import './Nesterov/pages';
 @import './Nesterov/btn';
 @import './Nesterov/drop-menu';
+@import './Nesterov/footer-subscribe';
+@import './Nesterov/info';
 
-@import './common';
-@import './base/base';
-@import './container';
 @import './header';
 @import './hero';
 @import './offerings';

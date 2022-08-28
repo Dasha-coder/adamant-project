@@ -1,5 +1,5 @@
 @mixin fonts($fz, $lh, $fw: 400) {
   font-size: $fz;
   font-weight: $fw;
-  line-height: $lh / $fz;
+  line-height: calc($lh / $fz);
 }
