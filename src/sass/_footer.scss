@@ -41,17 +41,17 @@
      bottom 0px left 216px,
      bottom 0px left 126px;
 
-    //  background-size:
-    //  100px 55px,
-    //  91px 115px,
+      background-size:
+      110px 81px,
+     55px 112px,
 
-    //  104px 259px,
-    //  60px 205px,
+      104px 259px,
+     60px 205px,
      
-    //  79px 42px,
-    //  72px 91px,
-    //  80px 66px,
-    //  105px 38px;
+      79px 42px,
+      79px 50px,
+      80px 66px,
+      105px 38px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -93,6 +93,18 @@
         bottom 0px left 503px,
         bottom 0px right 0px;
 
+        background-size:
+      203px 365px,
+     96px 289px,
+
+      167px 62px,
+     168px 92px,
+     
+      168px 108px,
+      221px 82px,
+      171px 141px,
+      153px 69px;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: 
     url(../images/img-footer/img-tablet/juice-right@2x_md.png),  
@@ -129,17 +141,29 @@
         bottom 0px left 763px,
         bottom 0px right 16px,
         bottom 0px left 53px;
+        
+        background-size:
+      526px 266px,
+     380px 126px,
+
+      178px 98px,
+     182px 154px,
+     
+      179px 110px,
+      235px 87px,
+      181px 73px,
+      196px 62px;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: 
-    url(../images/img-footer/img-desktop/juice-center@1x_lg.png),  
-    url(../images/img-footer/img-desktop/apelsin-big@1x_lg.png),
-    url(../images/img-footer/img-desktop/juice-left@1x_lg.png),
-    url(../images/img-footer/img-desktop/juice-right@1x_lg.png),
-    url(../images/img-footer/img-desktop/apple-left@1x_lg.png),
-    url(../images/img-footer/img-desktop/banan@1x_lg.png),
-    url(../images/img-footer/img-desktop/apple-right@1x_lg.png),
-    url(../images/img-footer/img-desktop/apelsin-small@1x_lg.png);
+    url(../images/img-footer/img-desktop/juice-center@2x_lg.png),  
+    url(../images/img-footer/img-desktop/apelsin-big@2x_lg.png),
+    url(../images/img-footer/img-desktop/juice-left@2x_lg.png),
+    url(../images/img-footer/img-desktop/juice-right@2x_lg.png),
+    url(../images/img-footer/img-desktop/apple-left@2x_lg.png),
+    url(../images/img-footer/img-desktop/banan@2x_lg.png),
+    url(../images/img-footer/img-desktop/apple-right@2x_lg.png),
+    url(../images/img-footer/img-desktop/apelsin-small@2x_lg.png);
   
   }
   }
