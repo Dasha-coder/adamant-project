@@ -1,118 +1,134 @@
-
 .customer-section {
-    
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(../images/customer-mobile.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/customer-mobile.png);
 
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/customer-tablet.png);
-        padding-bottom: 120px;
-    }
-    @media screen and (min-width:1280px){
-        background-image: url(../images/customer-desktop.png);
-        padding-bottom: 200px;
-    }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customer-tablet.png);
+    padding-bottom: 120px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/customer-desktop.png);
+    padding-bottom: 200px;
+  }
 }
 
-
-.customer-title {   
-   color: var(--main-txt-cl);
-    @include fonts(28px, 33px, 700);    
-    margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-        font-size: 42px;
-        line-height: calc(49 / 42);
-    }
+.customer-title {
+  color: var(--main-txt-cl);
+  @include fonts(28px, 33px, 700);
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
 }
 
 .customer-text {
-    color: var(--main-txt-cl);
-    @include fonts (14px, 16px);    
-    margin-bottom: 32px;
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: calc(19 / 16);
-    }
+  color: var(--main-txt-cl);
+  @include fonts(14px, 16px);
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
 }
 
 .customer-review {
-    color: var(--main-txt-cl);
-    @include fonts(16px, 19px, 700);
-      margin-bottom: 42px;
-    margin-top: 28px;
-    @media screen and (min-width: 768px) {
-        font-size: 18px;
-        line-height: calc(21 / 18);
-    }
+  color: var(--main-txt-cl);
+  @include fonts(16px, 19px, 700);
+  margin-bottom: 42px;
+  margin-top: 28px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: calc(21 / 18);
+  }
 }
 
 .customer-review-cont {
-    width: 100%;
-    padding: 8px;
-    @media screen and (min-width: 768px) {
-        padding: 12px;
-    }
+  width: 100%;
+  padding: 8px;
+  @media screen and (min-width: 768px) {
+    padding: 12px;
+  }
 
-         @media screen and (min-width: 1280px) {
-             padding: 14px;
-             max-width: 500px;
-         }
+  @media screen and (min-width: 1280px) {
+    padding: 14px;
+    max-width: 500px;
+  }
 }
 
-.customer-list{
-@media screen and (min-width:768px) {     
-        display: flex;
-        gap: 32px;    
-}
+.customer-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+  }
 
-@media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     gap: 140px;
-}
+  }
 }
 
 .customer-item {
-    background-color: white;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-
+  background-color: white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
-
 .customer-item:not(:last-child) {
-    margin-bottom: 24px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0px;
-    }
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .icon-star:not(:last-child) {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
 .customer-name {
-    color: var(--main-txt-cl);
-    @include fonts(14px, 21px, 500);
-    
+  color: var(--main-txt-cl);
+  @include fonts(14px, 21px, 500);
 }
 
 .customer-description {
-    color: var(--main-txt-cl);
-    @include fonts(14px, 21px);
-
+  color: var(--main-txt-cl);
+  @include fonts(14px, 21px);
 }
 
 .customer-info-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .customer-info-container-2 {
-    flex-direction: column;
-    margin-left: 16px;
-    padding-right: 14px;
-    border-right: 1px solid #7eb101;
+  flex-direction: column;
+  margin-left: 16px;
+  padding-right: 14px;
+  border-right: 1px solid #7eb101;
 }
 
+@keyframes stars {
+  0% {
+    transform: scale(2);
+    fill: white;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(1.5);
+    fill: yellow;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+    fill: var(--background-cl);
+    transform: rotate(360deg);
+  }
+}
+
+.customer-list, .icon-container {
+  fill: var(--background-cl);
+  animation-name: stars;
+  animation-duration: 2000ms;
+}
