@@ -1,0 +1,90 @@
+.slider {
+  position: relative;
+
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 320px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+  }
+}
+
+.swiper {
+  display: none;
+  @media screen and (min-width: 768px) {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 14px solid var(--background-cl);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+  }
+}
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  background-color: #ffffff;
+  z-index: 5;
+
+  @include hover-transition(box-shadow);
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 40px;
+    height: 48px;
+  }
+
+  &:active {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    fill: var(--main-txt-cl);
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  right: -14px;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  left: -14px;
+}
+.swiper__icon {
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 40px;
+    height: 48px;
+  }
+  .swiper-button:hover &,
+  .swiper-button:focus & {
+    fill: var(--icons-cl);
+  }
+}

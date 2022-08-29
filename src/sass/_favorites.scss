@@ -27,6 +27,7 @@
   align-items: center;
   border: 11px solid var(--background-cl);
   border-radius: 50%;
+
   &:hover,
   &:focus {
     border: 11px solid var(--accent-cl);
@@ -51,6 +52,7 @@
 .favorites-mobile__link {
   @extend %favorites__link;
 
+  @include hover-transition(border-color);
   width: 280px;
   height: 280px;
 }
@@ -72,6 +74,7 @@
 .favorites__link {
   @extend %favorites__link;
 
+  @include hover-transition(border-color);
   @media screen and (min-width: 768px) {
     width: 336px;
     height: 336px;

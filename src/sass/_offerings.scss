@@ -10,8 +10,10 @@
 }
 
 .offerings-title {
-  padding-top: 410px;
+  padding-top: 604px;
+  // margin-top: 60px;
   margin-bottom: 28px;
+
   @include fonts(28px, 33px, 700);
   color: var(--main-txt-cl);
 
@@ -23,31 +25,38 @@
   @media screen and (min-width: 1280px) {
     padding-top: 160px;
     @include fonts(42px, 50px, 700);
+
   }
 }
 
 .offerings-list {
   @media screen and (min-width: 768px) {
+
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 116px;
   }
 
+
   @media screen and (min-width: 1280px) {
     margin-left: auto;
     justify-content: right;
   }
+
 }
 
 .offerings-list__name {
   margin-bottom: 16px;
+
   @include fonts(18px, 21px, 700);
 
   @media screen and (min-width: 1280px) {
     max-width: 252px;
     @include fonts(18px, 25px, 700);
   }
+
 }
 
 .offerings-list-item {
@@ -59,6 +68,7 @@
 .offerings-title__description,
 .offerings-list__text {
   margin-bottom: 28px;
+
   min-width: 272px;
   @include fonts(14px, 16px, 400);
 
@@ -69,6 +79,7 @@
 
   @media screen and (min-width: 1280px) {
     @include fonts(16px, 24px, 400);
+
   }
 }
 
@@ -140,6 +151,32 @@
   }
 }
 
+/* .apple {
+    position: absolute;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    background-image: url("../images/offerings/all-apple@1x_sm.png");
+    
+    // linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //   url('../images/hero-images/img@1x_sm.jpg');
+    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //   url('../images/hero-images/img@2x_sm.jpg');
+    //   } 
+  
+    @media screen and (min-width: 768px) {
+    
+    background-image: url("../images/offerings/bcg-offerings@1x_md.png");
+    }
+  
+    @media screen and (min-width: 1280px) {
+    background-image: url("../images/offerings/bcg-offerings@1x_lg.png")
+  }  
+}
+ */
+
 .offerings-button {
   margin-right: 24px;
   font-weight: 500;
@@ -152,7 +189,8 @@
   font-family: inherit;
   padding: 11px 22px;
   border-radius: 30px;
-
+  //   width: 106px;
+  //   height: 40px;
   // transition-property: background-color;
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -172,12 +210,14 @@
   font-size: 13.67px;
   color: var(--mobile-menu-cl);
 
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
 .read-button__icon {
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
