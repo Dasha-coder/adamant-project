@@ -1,35 +1,81 @@
-// .offerings-picture {
-// margin-top: 41px;
-// margin-bottom: 60px;
-// margin-left: auto;
-// margin-right: auto;
-// }
+.offerings {
+  @media screen and (min-width: 1280px) {
+    max-width: 526px;
+    margin-left: auto;
+  }
+}
+
+.offerings-container {
+  margin-left: auto;
+}
 
 .offerings-title {
   padding-top: 410px;
   margin-bottom: 28px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: calc(33 / 28);
+  @include fonts(28px, 33px, 700);
   color: var(--main-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    @include fonts(42px, 49px, 700);
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 160px;
+    @include fonts(42px, 50px, 700);
+  }
+}
+
+.offerings-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 116px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: auto;
+    justify-content: right;
+  }
 }
 
 .offerings-list__name {
   margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(21 / 18);
-  color: var(--main-txt-cl);
+  @include fonts(18px, 21px, 700);
+
+  @media screen and (min-width: 1280px) {
+    max-width: 252px;
+    @include fonts(18px, 25px, 700);
+  }
+}
+
+.offerings-list-item {
+  @media screen and (min-width: 768px) {
+    max-width: 252px;
+  }
 }
 
 .offerings-title__description,
 .offerings-list__text {
   margin-bottom: 28px;
-  max-width: 272px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  color: var(--main-txt-cl);
+  min-width: 272px;
+  @include fonts(14px, 16px, 400);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    @include fonts(16px, 19px, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(16px, 24px, 400);
+  }
+}
+
+.offerings-title__description {
+  @media screen and (min-width: 768px) {
+    min-width: 526px;
+  }
 }
 
 .offerings-icons {
@@ -44,11 +90,11 @@
 }
 
 .offerings-background {
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-
   background-repeat: no-repeat;
-  background-size: 280px, 320px 1050px;
+  background-size: 280px, contain;
   background-position: 20px 41px, top;
 
   background-image: url('../images/offerings/all-apple@1x_sm.png'),
@@ -62,24 +108,29 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-size: 357px 394px, cover;
-    background-position: 20px 41px, 50% 50%, right top, top;
     background-image: url('../images/offerings/all-apple@1x_md-big.png'),
-      url('../images/offerings/apple@1x_md-middle.png'),
-      url('../images/offerings/apple@1x_md-small.png'),
-      url('../images/offerings/bcg-offerings@1x_md.png');
+  url('../images/offerings/apple@1x_md-middle.png'),
+  url('../images/offerings/apple@1x_md-small.png'),
+  url('../images/offerings/bcg-offerings@1x_md.png');
+  background-size: 357px, 166px, 108px, cover;
+  background-position: 32px 50px, 418px 166px, 628px 240px, top;
+  
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/offerings/all-apple@2x_md-big.png'),
-        url('../images/offerings/bcg-offerings@2x_md.png');
-    }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url('../images/offerings/all-apple@2x_md-big.png'),
+  url('../images/offerings/apple@2x_md-middle.png'),
+  url('../images/offerings/apple@2x_md-small.png'),
+  url('../images/offerings/bcg-offerings@2x_md.png');
+  }
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url('../images/offerings/all-apple@1x_lg.png'),
       url('../images/offerings/bcg-offerings@1x_lg.png');
+    background-size: 550px 604px, contain;
+    background-position: 16px 177px, top;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -100,12 +151,12 @@
   cursor: pointer;
   font-family: inherit;
   padding: 11px 22px;
-
   border-radius: 30px;
 
   // transition-property: background-color;
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
   &:hover,
   &:focus {
@@ -120,4 +171,14 @@
   border: transparent;
   font-size: 13.67px;
   color: var(--mobile-menu-cl);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.read-button__icon {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
