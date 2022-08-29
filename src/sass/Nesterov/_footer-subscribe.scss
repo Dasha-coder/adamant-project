@@ -5,10 +5,9 @@
 
   &__title {
     margin-bottom: 12px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
+    @include fonts(14, 21, 500);
   }
+
   &__field {
     display: flex;
     flex-direction: column;
@@ -23,23 +22,23 @@
   }
 
   &__input {
-    padding: 12px;
     width: 279px;
     height: 42px;
+    padding: 0;
+    padding-left: 12px;
     border: 0.85px solid var(--background-cl);
     border-radius: 30px;
-    outline: none;
+    outline: transparent;
+
+    @include fonts(12px, 18px);
   }
 
   &__input::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
+    @include fonts(12px, 18px);
     color: #505050;
   }
 
   &__input:not(:placeholder-shown) {
-    
     border-color: var(--icons-cl);
   }
 
@@ -47,46 +46,52 @@
     border-color: var(--inp-err-bd-cl);
   }
 
-    &__error{
-    display: none;
-    margin-top: 4px;
+  &__error-notification {
+    position: absolute;
+    left: 0;
+    top: 46px;
+    display: flex;
     align-items: center;
-    gap: 4px;
+    opacity: 0;
 
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.5;
+    @include hover-transition(opacity);
+  }
+
+  &__error {
+    @include fonts(10px, 15px);
+
     color: var(--inp-err-bd-cl);
   }
 
-  &__input:not(:placeholder-shown):required:invalid + &__error {
-    display: flex;
+  &__input:not(:placeholder-shown):required:invalid + &__error-notification {
+    opacity: 1;
   }
 
   &__btn {
+    @include fonts(13px, 20px, 500);
+
+    padding: 11px 22px;
+    border: 0.85px solid var(--icons-cl);
+
     background-color: transparent;
     color: var(--main-txt-cl);
-    width: 102px;
-    height: 42px;
-    border: 0.85px solid var(--icons-cl);
-    border-radius: 30px;
+
+    @include hover-transition(background-color);
 
     &:hover,
     &:focus {
       background-color: var(--background-cl);
     }
   }
+
   &__agreement {
     margin-top: 20px;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: calc(12px / 10px);
+    @include fonts(10px, 15px);
     color: var(--main-txt-cl);
 
     @media screen and (min-width: 768px) {
-      margin-top: 12px;
-      font-size: 12px;
-      line-height: calc(14px / 12px);
+      margin-top: 23px;
+      @include fonts(12px, 14px);
     }
   }
 
@@ -95,4 +100,8 @@
     text-underline-position: under;
     color: var(--icons-cl);
   }
+}
+
+.icon-error {
+  margin-right: 4px;
 }

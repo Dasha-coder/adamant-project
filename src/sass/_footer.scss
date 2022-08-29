@@ -1,178 +1,117 @@
 .footer {
   background-color: var(--hd-ft-bg-cl);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  
 }
 
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-top: 100px;
-  padding-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   background-repeat: no-repeat;
 
   // /mobile screen
-  background-image: 
-  url(../images/img-footer/img-smartphone/juice-left@1x_sm.png),
-  url(../images/img-footer/img-smartphone/ap-left@1x_sm.png),
-      
-  url(../images/img-footer/img-smartphone/juice-right@1x_sm.png),  
-  url(../images/img-footer/img-smartphone/apelsin-right@1x_sm.png),
-    
-  url(../images/img-footer/img-smartphone/juice-down-left@1x_sm.png),
-  url(../images/img-footer/img-smartphone/ap-down@1x_sm.png),
-  url(../images/img-footer/img-smartphone/juice-down-right@1x_sm.png),
-  url(../images/img-footer/img-smartphone/banan-down@1x_sm.png);
-     
+  background-image: url(../images/img-footer/img-smartphone/juice-left@1x_sm.png),
+    url(../images/img-footer/img-smartphone/ap-left@1x_sm.png),
+    url(../images/img-footer/img-smartphone/juice-right@1x_sm.png),
+    url(../images/img-footer/img-smartphone/apelsin-right@1x_sm.png),
+    url(../images/img-footer/img-smartphone/juice-down-left@1x_sm.png),
+    url(../images/img-footer/img-smartphone/ap-down@1x_sm.png),
+    url(../images/img-footer/img-smartphone/juice-down-right@1x_sm.png),
+    url(../images/img-footer/img-smartphone/banan-down@1x_sm.png);
 
-  background-position: 
-  top 137px left 0px,
-   top 111px left 0px,
+  background-position: top 137px left 0px, top 111px left 0px, top 0px right 0px,
+    top 25px right 0px, bottom 0px left 43px, bottom 0px left 72px,
+    bottom 0px left 216px, bottom 0px left 126px;
 
-    top 0px right 0px, 
-    top 25px right 0px, 
-    
-    bottom 0px left 43px,
-         bottom 0px left 72px,
-     bottom 0px left 216px,
-     bottom 0px left 126px;
-
-      background-size:
-      110px 81px,
-     55px 112px,
-
-      104px 259px,
-     60px 205px,
-     
-      79px 42px,
-      79px 50px,
-      80px 66px,
-      105px 38px;
+  background-size: 110px 81px, 55px 112px, 104px 259px, 60px 205px, 79px 42px,
+    79px 50px, 80px 66px, 105px 38px;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: 
-    url(../images/img-footer/img-smartphone/juice-left@2x_sm.png),
-    url(../images/img-footer/img-smartphone/ap-left@2x_sm.png),
-        
-    url(../images/img-footer/img-smartphone/juice-right@2x_sm.png),  
-    url(../images/img-footer/img-smartphone/apelsin-right@2x_sm.png),
-      
-    url(../images/img-footer/img-smartphone/juice-down-left@2x_sm.png),
-    url(../images/img-footer/img-smartphone/ap-down@2x_sm.png),
-    url(../images/img-footer/img-smartphone/juice-down-right@2x_sm.png),
-    url(../images/img-footer/img-smartphone/banan-down@2x_sm.png);
+    background-image: url(../images/img-footer/img-smartphone/juice-left@2x_sm.png),
+      url(../images/img-footer/img-smartphone/ap-left@2x_sm.png),
+      url(../images/img-footer/img-smartphone/juice-right@2x_sm.png),
+      url(../images/img-footer/img-smartphone/apelsin-right@2x_sm.png),
+      url(../images/img-footer/img-smartphone/juice-down-left@2x_sm.png),
+      url(../images/img-footer/img-smartphone/ap-down@2x_sm.png),
+      url(../images/img-footer/img-smartphone/juice-down-right@2x_sm.png),
+      url(../images/img-footer/img-smartphone/banan-down@2x_sm.png);
   }
 
   // /tablet screen
-  @media screen and (min-width: 768px){
-    background-image: 
-    url(../images/img-footer/img-tablet/juice-right@1x_md.png),  
-    url(../images/img-footer/img-tablet/apelsin-right@1x_md.png),
-    
-    url(../images/img-footer/img-tablet/apelsin-down@1x_md.png),
-    url(../images/img-footer/img-tablet/juice-down-left@1x_md.png),
-    url(../images/img-footer/img-tablet/ap-down@1x_md.png),
-    url(../images/img-footer/img-tablet/banan@1x_md.png),
-    url(../images/img-footer/img-tablet/juice-down-right@1x_md.png),
-    url(../images/img-footer/img-tablet/ap-right@1x_md.png);
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/img-footer/img-tablet/juice-right@1x_md.png),
+      url(../images/img-footer/img-tablet/apelsin-right@1x_md.png),
+      url(../images/img-footer/img-tablet/apelsin-down@1x_md.png),
+      url(../images/img-footer/img-tablet/juice-down-left@1x_md.png),
+      url(../images/img-footer/img-tablet/ap-down@1x_md.png),
+      url(../images/img-footer/img-tablet/banan@1x_md.png),
+      url(../images/img-footer/img-tablet/juice-down-right@1x_md.png),
+      url(../images/img-footer/img-tablet/ap-right@1x_md.png);
 
-    background-position: 
-      top 0px right 0px, 
-      top 35px right 0px, 
-      
-       bottom 0px left 0px,
-       bottom 0px left 136px,
-        bottom 0px left 197px,
-        bottom 0px left 314px,
-        bottom 0px left 503px,
-        bottom 0px right 0px;
+    background-position: top 0px right 0px, top 35px right 0px,
+      bottom 0px left 0px, bottom 0px left 136px, bottom 0px left 197px,
+      bottom 0px left 314px, bottom 0px left 503px, bottom 0px right 0px;
 
-        background-size:
-      203px 365px,
-     96px 289px,
+    background-size: 203px 365px, 96px 289px, 167px 62px, 168px 92px,
+      168px 108px, 221px 82px, 171px 141px, 153px 69px;
 
-      167px 62px,
-     168px 92px,
-     
-      168px 108px,
-      221px 82px,
-      171px 141px,
-      153px 69px;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-    background-image: 
-    url(../images/img-footer/img-tablet/juice-right@2x_md.png),  
-    url(../images/img-footer/img-tablet/apelsin-right@2x_md.png),
-    
-    url(../images/img-footer/img-tablet/apelsin-down@2x_md.png),
-    url(../images/img-footer/img-tablet/juice-down-left@2x_md.png),
-    url(../images/img-footer/img-tablet/ap-down@2x_md.png),
-    url(../images/img-footer/img-tablet/banan@2x_md.png),
-    url(../images/img-footer/img-tablet/juice-down-right@2x_md.png),
-    url(../images/img-footer/img-tablet/ap-right@2x_md.png);
-  
-  }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/img-footer/img-tablet/juice-right@2x_md.png),
+        url(../images/img-footer/img-tablet/apelsin-right@2x_md.png),
+        url(../images/img-footer/img-tablet/apelsin-down@2x_md.png),
+        url(../images/img-footer/img-tablet/juice-down-left@2x_md.png),
+        url(../images/img-footer/img-tablet/ap-down@2x_md.png),
+        url(../images/img-footer/img-tablet/banan@2x_md.png),
+        url(../images/img-footer/img-tablet/juice-down-right@2x_md.png),
+        url(../images/img-footer/img-tablet/ap-right@2x_md.png);
+    }
   }
 
   // /desktop screen
-  @media screen and (min-width: 1280px){
-    background-image: 
-    url(../images/img-footer/img-desktop/juice-center@1x_lg.png),  
-    url(../images/img-footer/img-desktop/apelsin-big@1x_lg.png),
-    url(../images/img-footer/img-desktop/juice-left@1x_lg.png),
-    url(../images/img-footer/img-desktop/juice-right@1x_lg.png),
-    url(../images/img-footer/img-desktop/apple-left@1x_lg.png),
-    url(../images/img-footer/img-desktop/banan@1x_lg.png),
-    url(../images/img-footer/img-desktop/apple-right@1x_lg.png),
-    url(../images/img-footer/img-desktop/apelsin-small@1x_lg.png);
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/img-footer/img-desktop/juice-center@1x_lg.png),
+      url(../images/img-footer/img-desktop/apelsin-big@1x_lg.png),
+      url(../images/img-footer/img-desktop/juice-left@1x_lg.png),
+      url(../images/img-footer/img-desktop/juice-right@1x_lg.png),
+      url(../images/img-footer/img-desktop/apple-left@1x_lg.png),
+      url(../images/img-footer/img-desktop/banan@1x_lg.png),
+      url(../images/img-footer/img-desktop/apple-right@1x_lg.png),
+      url(../images/img-footer/img-desktop/apelsin-small@1x_lg.png);
 
-    background-position: 
-       bottom 0px left 340px,
-       bottom 0px left 450px,
-        bottom 0px left 216px,
-        bottom 0px left 964px,
-        bottom 0px left 281px,
-        bottom 0px left 763px,
-        bottom 0px right 16px,
-        bottom 0px left 53px;
-        
-        background-size:
-      526px 266px,
-     380px 126px,
+    background-position: bottom 0px left 340px, bottom 0px left 450px,
+      bottom 0px left 216px, bottom 0px left 964px, bottom 0px left 281px,
+      bottom 0px left 763px, bottom 0px right 16px, bottom 0px left 53px;
 
-      178px 98px,
-     182px 154px,
-     
-      179px 110px,
-      235px 87px,
-      181px 73px,
-      196px 62px;
+    background-size: 526px 266px, 380px 126px, 178px 98px, 182px 154px,
+      179px 110px, 235px 87px, 181px 73px, 196px 62px;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-    background-image: 
-    url(../images/img-footer/img-desktop/juice-center@2x_lg.png),  
-    url(../images/img-footer/img-desktop/apelsin-big@2x_lg.png),
-    url(../images/img-footer/img-desktop/juice-left@2x_lg.png),
-    url(../images/img-footer/img-desktop/juice-right@2x_lg.png),
-    url(../images/img-footer/img-desktop/apple-left@2x_lg.png),
-    url(../images/img-footer/img-desktop/banan@2x_lg.png),
-    url(../images/img-footer/img-desktop/apple-right@2x_lg.png),
-    url(../images/img-footer/img-desktop/apelsin-small@2x_lg.png);
-  
-  }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/img-footer/img-desktop/juice-center@2x_lg.png),
+        url(../images/img-footer/img-desktop/apelsin-big@2x_lg.png),
+        url(../images/img-footer/img-desktop/juice-left@2x_lg.png),
+        url(../images/img-footer/img-desktop/juice-right@2x_lg.png),
+        url(../images/img-footer/img-desktop/apple-left@2x_lg.png),
+        url(../images/img-footer/img-desktop/banan@2x_lg.png),
+        url(../images/img-footer/img-desktop/apple-right@2x_lg.png),
+        url(../images/img-footer/img-desktop/apelsin-small@2x_lg.png);
+    }
   }
 }
 
-.footer-thumb{
+.footer-thumb {
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
   }
-
 }
