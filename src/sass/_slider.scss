@@ -65,13 +65,13 @@
 .swiper-button-prev {
   position: absolute;
   top: 50%;
-  left: -14px;
+  right: -14px;
 }
 
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  right: -14px;
+  left: -14px;
 }
 .swiper__icon {
   @media screen and (min-width: 768px) {
