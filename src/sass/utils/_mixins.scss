@@ -3,3 +3,13 @@
   font-weight: $fw;
   line-height: calc($lh / $fz);
 }
+
+@mixin hover-transition(
+  $trn-property,
+  $trn-dur: 250ms,
+  $trn-tm-funct: cubic-bezier(0.4, 0, 0.2, 1)
+) {
+  transition-property: $trn-property;
+  transition-duration: $trn-dur;
+  transition-timing-function: $trn-tm-funct;
+}
