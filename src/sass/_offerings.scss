@@ -247,6 +247,8 @@
 }
 
 .read-button {
+  display: inline-flex;
+  align-items: center;
   background-color: var(--background-cl);
   // width: 83px;
   height: 34px;
