@@ -1,9 +1,16 @@
 .offerings {
+  padding-top: 413px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 504px;
+  }
   @media screen and (min-width: 1280px) {
     // max-width: 526px;
     margin-left: auto;
-    flex-basis: 48%;
+    flex-basis: 48.5%;
     justify-content: left;
+
+    padding-top: 160px;
   }
 }
 
@@ -13,40 +20,37 @@
   }
 }
 
-/* .offerings-container {
-  margin-left: auto;
-} */
-
 .offerings-title {
-  margin-top: 413px;
   margin-bottom: 28px;
 
   @include fonts(28px, 33px, 700);
   color: var(--main-txt-cl);
 
   @media screen and (min-width: 768px) {
-    margin-top: 496px;
     margin-bottom: 20px;
     @include fonts(42px, 49px, 700);
+
+    max-width: 500px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 260px;
     @include fonts(42px, 50px, 700);
+    max-width: 526px;
   }
 }
 
 .offerings-list {
+  margin-bottom: 28px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
+    margin-bottom: 40px;
+
     gap: 116px;
   }
 
   @media screen and (min-width: 1280px) {
-    // margin-left: auto;
-    // justify-content: right;
     gap: 67px;
   }
 }
@@ -64,6 +68,12 @@
 }
 
 .offerings-list-item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 28px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     max-width: 252px;
   }
@@ -103,21 +113,40 @@
   }
 }
 
-.offerings-title__description,
-.offerings-list__text {
-  margin-bottom: 28px;
-
+.offerings-title__description {
+  margin-bottom: 40px;
   min-width: 272px;
+
   @include fonts(14px, 16px, 400);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     @include fonts(16px, 19px, 400);
+
+    max-width: 500px;
   }
 
   @media screen and (min-width: 1280px) {
     @include fonts(16px, 24px, 400);
+
+    max-width: 526px;
   }
+}
+.offerings-list__text {
+  //min-width: 272px;
+  @include fonts(14px, 16px, 400);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include fonts(14px, 21px, 400);
+  }
+}
+
+.offerings-list__text {
+  margin-bottom: 0;
 }
 
 .offerings-title__description {
@@ -164,6 +193,7 @@
       url('../images/offerings/bcg-offerings@1x_md.png');
     background-size: 357px, 166px, 108px, 100% 100%;
     background-position: 32px 150px, 418px 266px, 628px 340px, center;
+    //background-position: 32px 250px, 418px 366px, 628px 440px, center;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -182,6 +212,8 @@
     background-repeat: no-repeat;
     background-size: 280px 309px, 100% 100%;
     background-position: center 44px, top;
+
+    padding-top: 0;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
