@@ -19,21 +19,19 @@
 
 .offerings-title {
   margin-top: 413px;
-  // margin-top: 60px;
   margin-bottom: 28px;
 
   @include fonts(28px, 33px, 700);
   color: var(--main-txt-cl);
 
   @media screen and (min-width: 768px) {
-    margin-top: 604px;
+    margin-top: 496px;
     margin-bottom: 20px;
     @include fonts(42px, 49px, 700);
   }
 
   @media screen and (min-width: 1280px) {
-    // padding-top: 160px;
-    margin-top: 180px;
+    margin-top: 260px;
     @include fonts(42px, 50px, 700);
   }
 }
@@ -147,6 +145,8 @@
       url('../images/offerings/bcg-offerings@1x_lg.png');
     background-size: 550px 604px, 100% 100%;
     background-position: 16px 177px, top;
+
+    margin-top: -100px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
