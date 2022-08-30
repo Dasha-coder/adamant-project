@@ -1,6 +1,6 @@
 .customer-section {
   background-position: center;
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url(../images/customer-mobile.png);
 
@@ -127,7 +127,8 @@
   }
 }
 
-.customer-list, .icon-container {
+.customer-list,
+.icon-container {
   fill: var(--background-cl);
   animation-name: stars;
   animation-duration: 2000ms;

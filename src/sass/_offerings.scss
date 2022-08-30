@@ -1,16 +1,24 @@
 .offerings {
   @media screen and (min-width: 1280px) {
-    max-width: 526px;
+    // max-width: 526px;
     margin-left: auto;
+    flex-basis: 48%;
+    justify-content: left;
   }
 }
 
-.offerings-container {
-  margin-left: auto;
+.offerings-container-desktop {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
 
+/* .offerings-container {
+  margin-left: auto;
+} */
+
 .offerings-title {
-  padding-top: 604px;
+  margin-top: 413px;
   // margin-top: 60px;
   margin-bottom: 28px;
 
@@ -18,33 +26,31 @@
   color: var(--main-txt-cl);
 
   @media screen and (min-width: 768px) {
+    margin-top: 604px;
     margin-bottom: 20px;
     @include fonts(42px, 49px, 700);
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 160px;
+    // padding-top: 160px;
+    margin-top: 180px;
     @include fonts(42px, 50px, 700);
-
   }
 }
 
 .offerings-list {
   @media screen and (min-width: 768px) {
-
-
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 116px;
   }
 
-
   @media screen and (min-width: 1280px) {
-    margin-left: auto;
-    justify-content: right;
+    // margin-left: auto;
+    // justify-content: right;
+    gap: 67px;
   }
-
 }
 
 .offerings-list__name {
@@ -56,7 +62,6 @@
     max-width: 252px;
     @include fonts(18px, 25px, 700);
   }
-
 }
 
 .offerings-list-item {
@@ -79,7 +84,6 @@
 
   @media screen and (min-width: 1280px) {
     @include fonts(16px, 24px, 400);
-
   }
 }
 
@@ -101,12 +105,13 @@
 }
 
 .offerings-background {
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  // max-width: 100%;
+  // margin-right: auto;
+  // margin-left: auto;
+
   background-repeat: no-repeat;
-  background-size: 280px, contain;
-  background-position: 20px 41px, top;
+  background-size: 280px, 100% 100%; /* contain */
+  background-position: center 44px, top;
 
   background-image: url('../images/offerings/all-apple@1x_sm.png'),
     url('../images/offerings/bcg-offerings@1x_sm.png');
@@ -119,28 +124,29 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/offerings/all-apple@1x_md-big.png'),
-  url('../images/offerings/apple@1x_md-middle.png'),
-  url('../images/offerings/apple@1x_md-small.png'),
-  url('../images/offerings/bcg-offerings@1x_md.png');
-  background-size: 357px, 166px, 108px, cover;
-  background-position: 32px 50px, 418px 166px, 628px 240px, top;
-  
+    margin-top: -100px;
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url('../images/offerings/all-apple@2x_md-big.png'),
-  url('../images/offerings/apple@2x_md-middle.png'),
-  url('../images/offerings/apple@2x_md-small.png'),
-  url('../images/offerings/bcg-offerings@2x_md.png');
-  }
+    background-image: url('../images/offerings/all-apple@1x_md-big.png'),
+      url('../images/offerings/apple@1x_md-middle.png'),
+      url('../images/offerings/apple@1x_md-small.png'),
+      url('../images/offerings/bcg-offerings@1x_md.png');
+    background-size: 357px, 166px, 108px, 100% 100%;
+    background-position: 32px 150px, 418px 266px, 628px 340px, top;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/all-apple@2x_md-big.png'),
+        url('../images/offerings/apple@2x_md-middle.png'),
+        url('../images/offerings/apple@2x_md-small.png'),
+        url('../images/offerings/bcg-offerings@2x_md.png');
+    }
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url('../images/offerings/all-apple@1x_lg.png'),
       url('../images/offerings/bcg-offerings@1x_lg.png');
-    background-size: 550px 604px, contain;
+    background-size: 550px 604px, 100% 100%;
     background-position: 16px 177px, top;
   }
   @media (min-device-pixel-ratio: 2),
@@ -195,21 +201,24 @@
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
   &:hover,
   &:focus {
     border: solid 2px #597d00;
   }
 }
 
+.offer__btn {
+  display: inline-block;
+}
+
 .read-button {
   background-color: var(--background-cl);
-  width: 83px;
+  // width: 83px;
   height: 34px;
   border: transparent;
+
   font-size: 13.67px;
   color: var(--mobile-menu-cl);
-
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -217,7 +226,6 @@
 }
 
 .read-button__icon {
-
   @media screen and (min-width: 1280px) {
     display: none;
   }
