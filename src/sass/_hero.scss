@@ -1,5 +1,6 @@
 .section-hero {
-    padding-bottom: 50px;
+    padding-bottom: -15px;
+    padding-top: 0px;
   
     &__thumb {
       display: flex;
@@ -88,6 +89,7 @@
   
 .section-hero-general {
   display: flex;
+  padding-top: 0px;
 }
 
 
@@ -95,10 +97,12 @@
 
 .slider {
   width: 600px;
+  padding-top: 14px;
 }
 
 .swiper {
   width: 600px;
+  padding-top: 14px;
 }
 
 .section-hero__title {
@@ -113,6 +117,44 @@
  width: 502px;
 }
 
+}
+
+/*
+
+@media screen and (min-width:768px) {
+  .section-hero-general {
+    padding-bottom: 0px;
+  }
+  
+  .section-hero__title {
+    width: 350px;
+   }
+
+   .section-hero {
+    padding-bottom: 50px;
+    padding-top: 60px;
+   }
+
+   .slider {
+    padding-top: 40px;
+   }
+
+   .swiper {
+    padding-top: 0px;
+   } 
+
+   .swiper-wrapper {
+    padding-top: 120px;
+   }
+}
+
+*/
+
+@media screen and (min-width:768px) {
+.section-hero {
+  padding-bottom: 50px;
+  padding-top: 60px;
+ }
 }
 
 .section-hero__title {
