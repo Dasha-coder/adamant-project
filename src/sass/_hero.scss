@@ -95,6 +95,12 @@
 
 @media screen and (min-width:1200px) {
 
+ .section-hero {
+    padding-bottom: 0px;
+    padding-top: 0px;
+   }
+
+
 .slider {
   width: 600px;
   padding-top: 14px;
@@ -102,7 +108,7 @@
 
 .swiper {
   width: 600px;
-  padding-top: 14px;
+  padding-top: 0px;
 }
 
 .section-hero__title {
@@ -152,8 +158,8 @@
 
 @media screen and (min-width:768px) {
 .section-hero {
-  padding-bottom: 50px;
-  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-top: 0px;
  }
 }
 
