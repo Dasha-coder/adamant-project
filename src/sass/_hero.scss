@@ -1,20 +1,24 @@
+.hero__container {
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 1280px) {
+    align-items: flex-end;
+  }
+}
 .section-hero {
   @media screen and (min-width: 768px) {
     padding-bottom: 0;
     padding-top: 60px;
   }
-
   @media screen and (min-width: 1280px) {
     padding-top: 14px;
   }
-
   &__thumb {
     display: flex;
     flex-direction: column;
 
     @media screen and (min-width: 768px) {
       width: 537px;
-      margin-bottom: 73px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -72,28 +76,19 @@
     line-height: 1.5;
     background-color: var(--accent-cl);
     color: var(--main-txt-cl);
-
     &:hover,
     &:focus {
       background-color: var(--btn-hover-cl);
     }
   }
-
   &__img {
     display: none;
-
     @media screen and (min-width: 768px) {
       display: flex;
-      flex-direction: column;
-      gap: 28px;
-
-      @media screen and (min-width: 768px) {
-        width: 537px;
-      }
-
-      @media screen and (min-width: 1280px) {
-        width: 502px;
-      }
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 320px;
     }
   }
 }
