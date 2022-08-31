@@ -97,7 +97,7 @@
     padding-bottom: 60px;
     padding-top: 60px;
    }
-  }
+  
   
   .section-hero__btn {
     padding: 6px 18px;
@@ -105,6 +105,15 @@
   
   .btn {
     padding: 6px 18px;
+  }
+/*
+  .slider {
+    position: absolute;
+    width: 320px;
+    top: 200px;
+    left: 408px;
+  }
+*/
   }
 
 @media screen and (min-width:1200px) {
@@ -155,13 +164,7 @@
     padding-top: 60px;
    }
 
-   .slider {
-    padding-top: 40px;
-   }
-
-   .swiper {
-    padding-top: 0px;
-   } 
+   
 
    .swiper-wrapper {
     padding-top: 120px;
