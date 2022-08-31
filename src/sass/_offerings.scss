@@ -13,25 +13,20 @@
   }
 }
 
-/* .offerings-container {
-  margin-left: auto;
-} */
-
 .offerings-title {
-  margin-top: 413px;
   margin-bottom: 28px;
 
   @include fonts(28px, 33px, 700);
   color: var(--main-txt-cl);
 
   @media screen and (min-width: 768px) {
-    margin-top: 496px;
+    margin-top: 0;
     margin-bottom: 20px;
     @include fonts(42px, 49px, 700);
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 260px;
+    margin-top: 160px;
     @include fonts(42px, 50px, 700);
   }
 }
@@ -139,14 +134,15 @@
 
 .offerings-background {
   background-repeat: no-repeat;
-
+  padding-top: 413px;
   @media screen and (min-width: 1280px) {
     background-image: url('../images/offerings/all-apple@1x_lg.png'),
       url('../images/offerings/bcg-offerings@1x_lg.png');
     background-size: 550px 604px, 100% 100%;
-    background-position: 16px 177px, top;
+    background-position: 16px 177px, center;
 
-    margin-top: -100px;
+    padding-top: 260px;
+    margin-top: -177px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -155,8 +151,9 @@
       url('../images/offerings/bcg-offerings@2x_lg.png');
   }
 
-  @media screen and (min-width: 767px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: -100px;
+    padding-top: 604px;
 
     background-image: url('../images/offerings/all-apple@1x_md-big.png'),
       url('../images/offerings/apple@1x_md-middle.png'),
@@ -192,32 +189,6 @@
   }
 }
 
-/* .apple {
-    position: absolute;
-    z-index: 10;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: top;
-    background-image: url("../images/offerings/all-apple@1x_sm.png");
-    
-    // linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   url('../images/hero-images/img@1x_sm.jpg');
-    //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //   url('../images/hero-images/img@2x_sm.jpg');
-    //   } 
-  
-    @media screen and (min-width: 768px) {
-    
-    background-image: url("../images/offerings/bcg-offerings@1x_md.png");
-    }
-  
-    @media screen and (min-width: 1280px) {
-    background-image: url("../images/offerings/bcg-offerings@1x_lg.png")
-  }  
-}
- */
-
 .offerings-button {
   margin-right: 24px;
   font-weight: 500;
@@ -230,11 +201,7 @@
   font-family: inherit;
   padding: 11px 22px;
   border-radius: 30px;
-  //   width: 106px;
-  //   height: 40px;
-  // transition-property: background-color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include hover-transition(border);
 
   &:hover,
   &:focus {

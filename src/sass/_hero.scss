@@ -20,7 +20,6 @@
   &__thumb {
     display: flex;
     flex-direction: column;
-    gap: 28px;
 
     @media screen and (min-width: 768px) {
       width: 537px;
@@ -29,7 +28,7 @@
 
     @media screen and (min-width: 1280px) {
       width: 502px;
-      margin-bottom: 104px;
+      margin-bottom: 163px;
     }
   }
   &__title {
@@ -37,17 +36,20 @@
     font-size: 28px;
     line-height: calc(33px / 28px);
     color: var(--main-txt-cl);
+    margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
       font-weight: 700;
       font-size: 42px;
       line-height: 1.2;
+      margin-bottom: 44px;
     }
 
     @media screen and (min-width: 1280px) {
       font-weight: 700;
       font-size: 48px;
       line-height: 1.2;
+      margin-bottom: 28px;
     }
   }
 
@@ -56,19 +58,23 @@
     font-size: 14px;
     line-height: 1.5;
     color: var(--main-txt-cl);
+    margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
       font-size: 16px;
+      margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       width: 336px;
+      margin-bottom: 40px;
     }
   }
 
   &__btn {
-    width: 98px;
-    height: 32px;
+    max-width: 98px;
+
+    padding: 6px 18px;
 
     font-weight: 500;
     font-size: 13px;
