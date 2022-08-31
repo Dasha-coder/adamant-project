@@ -86,6 +86,30 @@
     }
   }
   
+.section-hero-general {
+  display: flex;
+}
+
+
+@media screen and (min-width:1200px) {
+
+.slider {
+  width: 600px;
+}
+
+.swiper {
+  width: 600px;
+}
+
+.section-hero__title {
+ width: 502px;
+}
+
+.section-hero__text {
+ width: 502px;
+}
+
+}
 
 .section-hero__title {
     font-family: 'Roboto';
