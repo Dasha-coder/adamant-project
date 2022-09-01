@@ -52,8 +52,11 @@
   }
 }
 .offerings-list-item {
+  margin-top: 28px;
+
   @media screen and (min-width: 768px) {
     max-width: 252px;
+    margin-bottom: 40px;
   }
 }
 @mixin offering-icon(
@@ -87,13 +90,12 @@
     @include offering-icon(url(../images/offerings/touch.svg));
   }
 }
+
 .offerings-title__description,
 .offerings-list__text {
-  margin-bottom: 28px;
   min-width: 272px;
   @include fonts(14px, 16px, 400);
   @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
     @include fonts(16px, 19px, 400);
   }
   @media screen and (min-width: 1280px) {
