@@ -6,7 +6,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-    // max-width: 526px;
     margin-left: auto;
     flex-basis: 48%;
     justify-content: left;
@@ -45,8 +44,6 @@
     gap: 116px;
   }
   @media screen and (min-width: 1280px) {
-    // margin-left: auto;
-    // justify-content: right;
     gap: 67px;
   }
 }
@@ -127,7 +124,7 @@
 
 .offerings-container-desktop {
   background-repeat: no-repeat;
-  // padding-top: 410px;
+
   @media screen and (min-width: 1280px) {
     display: flex;
     padding-bottom: 50px;
@@ -135,7 +132,6 @@
     background-image: url('../images/offerings/all-apple@1x_lg.png');
     background-size: 550px 604px;
     background-position: 16px 77px;
-    z-index: 2;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -238,7 +234,7 @@
   display: inline-flex;
   align-items: center;
   background-color: var(--background-cl);
-  // width: 83px;
+
   height: 34px;
   border: transparent;
   font-size: 13.67px;
