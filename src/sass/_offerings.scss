@@ -1,14 +1,16 @@
 .offerings {
+  padding-top: 350px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 544px;
+  }
+
   @media screen and (min-width: 1280px) {
     // max-width: 526px;
     margin-left: auto;
     flex-basis: 48%;
     justify-content: left;
-  }
-}
-.offerings-container-desktop {
-  @media screen and (min-width: 1280px) {
-    display: flex;
+    padding-top: 220px;
   }
 }
 
@@ -19,21 +21,21 @@
   color: var(--main-txt-cl);
 
   @media screen and (min-width: 768px) {
-    margin-top: 0;
     margin-bottom: 20px;
     @include fonts(42px, 49px, 700);
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 160px;
     @include fonts(42px, 50px, 700);
   }
 }
 .offerings-list {
+  margin-bottom: 28px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
 
+    margin-top: 40px;
     margin-bottom: 40px;
     gap: 116px;
   }
@@ -57,6 +59,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 252px;
+    margin-top: 0px;
   }
 }
 @mixin offering-icon(
@@ -117,55 +120,86 @@
   left: 8px;
 }
 
-.offerings-background {
+.offerings-container-desktop {
   background-repeat: no-repeat;
-  padding-top: 413px;
+  // padding-top: 410px;
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/offerings/all-apple@1x_lg.png'),
-      url('../images/offerings/bcg-offerings@1x_lg.png');
-    background-size: 550px 604px, 100% 100%;
-    background-position: 16px 177px, center;
+    display: flex;
 
-    padding-top: 260px;
-    margin-top: -177px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/offerings/all-apple@2x_lg.png'),
-      url('../images/offerings/bcg-offerings@2x_lg.png');
-  }
+    background-image: url('../images/offerings/all-apple@1x_lg.png');
+    background-size: 550px 604px;
+    background-position: 16px 77px;
 
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/all-apple@2x_lg.png');
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-top: -100px;
-    padding-top: 604px;
-
     background-image: url('../images/offerings/all-apple@1x_md-big.png'),
       url('../images/offerings/apple@1x_md-middle.png'),
-      url('../images/offerings/apple@1x_md-small.png'),
-      url('../images/offerings/bcg-offerings@1x_md.png');
-    background-size: 357px, 166px, 108px, 100% 100%;
-    background-position: 32px 150px, 418px 266px, 628px 340px, center;
+      url('../images/offerings/apple@1x_md-small.png');
+    background-size: 357px, 166px, 108px;
+    background-position: 32px 50px, 418px 166px, 628px 240px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/offerings/all-apple@2x_md-big.png'),
         url('../images/offerings/apple@2x_md-middle.png'),
-        url('../images/offerings/apple@2x_md-small.png'),
-        url('../images/offerings/bcg-offerings@2x_md.png');
+        url('../images/offerings/apple@2x_md-small.png');
     }
   }
   @media screen and (max-width: 767px) {
-    background-image: url('../images/offerings/all-apple@1x_sm.png'),
-      url('../images/offerings/bcg-offerings@1x_sm.png');
+    background-image: url('../images/offerings/all-apple@1x_sm.png');
     background-repeat: no-repeat;
-    background-size: 280px 309px, 100% 100%;
-    background-position: center 44px, top;
+    background-size: 280px 309px;
+    background-position: center -16px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/offerings/all-apple@2x_sm.png'),
-        url('../images/offerings/bcg-offerings@2x_sm.png');
+      background-image: url('../images/offerings/all-apple@2x_sm.png');
+    }
+  }
+}
+
+.offerings-background {
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/offerings/bcg-offerings@1x_lg.png');
+    background-size: 100% 100%;
+    background-position: center;
+
+    margin-top: -161px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/offerings/bcg-offerings@2x_lg.png');
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: -100px;
+
+    background-image: url('../images/offerings/bcg-offerings@1x_md.png');
+    background-size: 100% 100%;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/bcg-offerings@2x_md.png');
+    }
+  }
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/offerings/bcg-offerings@1x_sm.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/bcg-offerings@2x_sm.png');
     }
   }
 }
